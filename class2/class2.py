@@ -7,14 +7,16 @@ print(c)
 a = a * 3  # 字串乘法
 print(a)
 
+
 # 認識基本指令
 # 指令會有名稱跟括號組成，()裡面放題給給指令的參數
 # 每個參數都要用逗號隔開
 m = max(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)  # 最大值
+print(m)
 
 le = len("hello")  # 字串長度
 print(le)
-
+"""
 # type()取得參數的型態
 print(type(1))  # 取型態
 print(type("hello"))  # 取型態
@@ -25,7 +27,7 @@ print(type(1.1))  # 取型態
 # int() 轉換成整數
 # float() 轉換成浮點數
 # str() 轉換成字串
-# bool() 轉換成布林值
+# bool()
 
 print(int("123"))  # 123
 print(int(123.99999))  # 123
@@ -84,3 +86,4 @@ r = input("請輸入正方形邊長:")
 r = int(r)
 area = r * r
 print(f"正方形的面積為{area}")
+"""
