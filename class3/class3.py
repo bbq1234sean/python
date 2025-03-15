@@ -46,3 +46,12 @@ print(not False)  # True, not False
 
 # if
 pwd = input("請輸入密碼:")
+if pwd == "1qaz":
+    print("歡迎使機器人")
+elif pwd == "2wsx":
+    print("歡迎人")
+else:
+    print("密碼錯誤")
+
+# if elif else是連續的判斷,只要有一個條件成立,後面的判斷就不會執行
+# if 一定要有elif可以有多但是選用,else只能有一個但是選用
