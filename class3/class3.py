@@ -26,7 +26,8 @@ except:
 print(1 == 1)  # True, 1 等於 1
 print(1 != 1)  # False, 1 不等於 1
 print(1 > 1)  # False, 1 大於 1
-print(1 < 1)  # False, 1 小於 1
+print(1 < 1)
+# False, 1 小於 1
 print(1 >= 1)  # True, 1 大於等於 1
 print(1 <= 1)  # True, 1 小於等於 1
 
@@ -54,7 +55,6 @@ else:
 
 # if elif else是連續的判斷,只要有一個條件成立,後面的判斷就不會執行
 # if 一定要有elif可以有多但是選用,else只能有一個但是選用
-
 
 try:
     grade = int(input("請輸入你的考試成績:"))

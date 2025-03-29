@@ -2,7 +2,6 @@ try:
     grade = int(input("請輸入你的考試成績:"))
 except:
     print("you should input a number")
-    exit()
 
 if grade >= 90:
     print("A")
