@@ -1,7 +1,7 @@
 import turtle as t
 
 t.penup()
-t.color("red")
+t.color("dark red")
 t.shape("circle")
 for i in range(58):
     t.forward(i * 2)
