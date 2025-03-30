@@ -17,3 +17,17 @@ EX:
 你的BMI為31.14186851211073
 體重過重
 """
+
+try:
+    n = float(input("請輸入身高(公尺):"))
+    w = float(input("請輸入體重(公斤):"))
+    bmi = w / n**2
+    print(f"你的BMI為: {bmi}")
+except:
+    print("you should input a number")
+if bmi > 20.7:
+    print("體重過重")
+elif bmi > 14.8:
+    print("體重正常")
+else:
+    print("體重過輕")
