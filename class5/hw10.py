@@ -14,3 +14,10 @@ EX:
   *
   *
 """
+
+x = int(input("請輸入層數:"))
+for i in range(x):
+    print(" " * (x - (i + 1)) + "*" * (i * 2 + 1))
+
+for i in range(x):
+    print(" " * (x - 1) + "*")
