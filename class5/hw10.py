@@ -15,7 +15,7 @@ EX:
   *
 """
 
-x = int(input("請輸入層數:"))
+x = int(input("請輸入要印出的箭頭大小:"))
 for i in range(x):
     print(" " * (x - (i + 1)) + "*" * (i * 2 + 1))
 

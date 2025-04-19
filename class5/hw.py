@@ -1,6 +1,6 @@
 import turtle as t
 
-t.penup()
+
 t.color("black")
 t.shape("arrow")
 t.stamp()
