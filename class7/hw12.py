@@ -15,3 +15,8 @@ EX：
 43
 47
 """
+
+f = int(input("請輸入開始的整數:"))
+t = int(input("請輸入結束的整數:"))
+for i in range(f, t + 1):
+   
