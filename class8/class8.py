@@ -18,7 +18,7 @@ while True:
     print("2.柳橙汁")
     print("3.葡萄汁")
     print("4.系統關閉")
-    ans = input("請輸入編號編號:"))
+    ans = input("請輸入編號編號:")
     x = int(input("請輸入數字:"))
     if ans == 1:
         print("您點的商品是蘋果汁")
@@ -57,7 +57,3 @@ for i in range(1, a + 1):
         print("休息一下")
         continue
     print(f"第 {i} 次跳繩")
-    
-    
-
-
