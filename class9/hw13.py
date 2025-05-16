@@ -12,7 +12,7 @@ EX:
 再小一點
 請輸入15~25的整數:10
 再大一點
-請輸入15~25的整數:20
+請輸入15~25的整數 L:20
 再大一點
 請輸入20~25的整數:23
 再大一點
@@ -20,50 +20,25 @@ EX:
 恭喜猜中!
 """
 
+L = ["1.蘋果汁", "2.柳橙汁", "3.葡萄汁", "4.系統關閉"]
+print(L)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-print juice_list = ["蘋果汁", "柳橙汁", "葡萄汁", "系統關閉"]
-L = [1, 2, 3, 4]
 while True:
 
     ans = input("請輸入編號:")
-
-    for i in L[1:4]:
-        if ans == i:
-            print(juice_list[i - 1])
-            break
-        print(L)
+    if int(ans) == 4:
+        print("系統關閉")
+        break
 
     else:
-        print("輸入錯誤查無此果汁,請重新輸入輸入錯誤查無此果汁,請重新輸入")
+        for i in range(len(L)):
+
+            if int(ans) > len(L):
+                print("輸入錯誤查無此果汁,請重新輸入輸入錯誤查無此果汁,請重新輸入")
+                break
+            elif int(ans) == i:
+                print("您點的商品是:" + L[i - 1])
+                break
+            else:
+                continue
