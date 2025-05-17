@@ -20,29 +20,26 @@ EX:
 恭喜猜中!
 """
 
-password = 24
+import random
 
-Upper = 100
-Lower = 0
-num = int(input("請輸入0~100的整數:"))  # 取得輸入的數字
-
+u = 100
+l = 0
+a = random.randrange(1, 101)
+x = int(input("請輸入1-100的整數 :"))
 while True:
 
-    if num < 0 or num > 100:
-        num = int(input("請輸入0~100範圍內的整數:"))
-        continue
-    elif num > password:
-        Upper = num
-        print("再小一點")
-        num = int(input("請輸入" + str(Lower) + "~" + str(Upper) + "的整數:"))
-        continue
-    elif num < password:
-        Lower = num
+    if x < a:
+        l = x
         print("再大一點")
-        num = int(input("請輸入" + str(Lower) + "~" + str(Upper) + "的整數:"))
+        x = int(input("請輸入" + str(l) + "~" + str(u) + "的整數:"))
+        continue
+    elif x > a:
+        u = x
+        print("再小一點")
+        x = int(input("請輸入" + str(l) + "~" + str(u) + "的整數:"))
         continue
     else:
-        print("恭喜猜中!")
+        print("恭喜猜中")
         break
 
 
