@@ -29,12 +29,14 @@ x = int(input("請輸入1-100的整數 :"))
 while True:
 
     if x < a:
-        l = x
+        if x > l:
+            l = x
         print("再大一點")
         x = int(input("請輸入" + str(l) + "~" + str(u) + "的整數:"))
         continue
     elif x > a:
-        u = x
+        if x < u:
+            u = x
         print("再小一點")
         x = int(input("請輸入" + str(l) + "~" + str(u) + "的整數:"))
         continue
@@ -65,3 +67,23 @@ while True:
                 break
             else:
                 continue
+
+
+juice = ["蘋果汁", "柳橙汁", "葡萄汁", "系統關閉"]
+
+while True:
+    for i in range(len(juice)):
+        print(f"{i + 1}.{juice[i]}")
+    try:
+        n = int(input("請輸入編號編號:"))
+    except:
+        print("輸入錯誤,請重新輸入")
+        continue
+    if n == len(juice):
+        print("系統關閉")
+        break
+    elif 1 <= n <= len(juice):
+        print(f"您點的商品是{juice [n - 1]}")
+
+    else:
+        print("輸入錯誤,請重新輸入")
