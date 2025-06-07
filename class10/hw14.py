@@ -13,9 +13,9 @@ while True:
 
         else:
             print("你要修改的星期是" + str(ans))
-            print("原本的天氣是" + L[ans])
+            print("原本的天氣是" + L[ans - 1])
             r = input("請輸入新的天氣:")
-            print("修改後的天氣是" + r)
-            L[ans] = r
+            L =[ans - 1] = r
+            print("修改後的天氣是"+ L[ans - 1])
             print(L)
             break
